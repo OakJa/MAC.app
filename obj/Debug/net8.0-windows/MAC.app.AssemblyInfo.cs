@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MAC.app")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8251dd19f558e401e4b75261b8bf5bffbfc57ae7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7671c456e1093c2dff971a43f4a1abb66a0c9d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("MAC.app")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MAC.app")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

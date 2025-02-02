@@ -22,7 +22,7 @@ namespace MAC.app
         {
             int amountToBuy = 1;
             bool result = item.BuyMoccaCoffee(amountToBuy);
-            MessageBox.Show(result ? $"ทำการซื้อสำเร็จ จำนวน : {amountToBuy} Cup" : "ของบ่มีมาซื้อใหม่เด้อ");
+            MessageBox.Show(result ? $"Purchase successful: {amountToBuy} Cup(s)" : "Out of stock, please try again later");
             moccaStock = item.GetBlackCoffeeStock();
             tbtextBox2.Text = moccaStock.ToString();
             MessageBox.Show(item.GetStockInfo());
@@ -32,7 +32,7 @@ namespace MAC.app
         {
             int amountToBuy = 1;
             bool result = item.BuyLatteCoffee(amountToBuy);
-            MessageBox.Show(result ? $"ทำการซื้อสำเร็จ จำนวน : {amountToBuy} Cup" : "ของบ่มีมาซื้อใหม่เด้อ");
+            MessageBox.Show(result ? $"Purchase successful: {amountToBuy} Cup(s)" : "Out of stock, please try again later");
             latteStock = item.GetBlackCoffeeStock();
             tbtextBox3.Text = latteStock.ToString();
             MessageBox.Show(item.GetStockInfo());
@@ -42,7 +42,7 @@ namespace MAC.app
         {
             int amountToBuy = 1;
             bool result = item.BuyChocolate(amountToBuy);
-            MessageBox.Show(result ? $"ทำการซื้อสำเร็จ จำนวน : {amountToBuy} Cup" : "ของบ่มีมาซื้อใหม่เด้อ");
+            MessageBox.Show(result ? $"Purchase successful: {amountToBuy} Cup(s)" : "Out of stock, please try again later");
             chocolateStock = item.GetBlackCoffeeStock();
             tbtextBox4.Text = chocolateStock.ToString();
             MessageBox.Show(item.GetStockInfo());
@@ -52,7 +52,7 @@ namespace MAC.app
         {
             int amountToBuy = 1;
             bool result = item.BuyBlackCoffee(amountToBuy);
-            MessageBox.Show(result ? $"ทำการซื้อสำเร็จ จำนวน : {amountToBuy} Cup" : "ของบ่มีมาซื้อใหม่เด้อ");
+            MessageBox.Show(result ? $"Purchase successful: {amountToBuy} Cup(s)" : "Out of stock, please try again later");
             blackCoffeeStock = item.GetBlackCoffeeStock();
             tbtextBox1.Text = blackCoffeeStock.ToString();
             MessageBox.Show(item.GetStockInfo());
@@ -66,7 +66,8 @@ namespace MAC.app
         private void button5_Click(object sender, EventArgs e)
         {
             item.IncreaseStock(10, 10, 10, 10, 1000, 1000, 1000, 1000);
-            MessageBox.Show("เติมของเสร็จแล้ว");
+            MessageBox.Show("Stock replenished");
+
             MessageBox.Show(item.GetStockInfo());
         }
 

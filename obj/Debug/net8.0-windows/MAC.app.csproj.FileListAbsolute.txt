@@ -14,3 +14,5 @@ C:\Users\moith\source\repos\MAC.app\MAC.app\obj\Debug\net8.0-windows\refint\MAC.
 C:\Users\moith\source\repos\MAC.app\MAC.app\obj\Debug\net8.0-windows\MAC.app.pdb
 C:\Users\moith\source\repos\MAC.app\MAC.app\obj\Debug\net8.0-windows\MAC.app.genruntimeconfig.cache
 C:\Users\moith\source\repos\MAC.app\MAC.app\obj\Debug\net8.0-windows\ref\MAC.app.dll
+C:\Users\moith\source\repos\MAC.app\MAC.app\obj\Debug\net8.0-windows\MAC.app.Properties.Resources.resources
+C:\Users\moith\source\repos\MAC.app\MAC.app\obj\Debug\net8.0-windows\MAC.app.sourcelink.json
