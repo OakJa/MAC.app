@@ -109,13 +109,19 @@ namespace MAC.app
 
         public string GetStockInfo()
         {
-            return $"สินค้าในเครื่อง\n" +
+            return $"วัถุดิบในเครื่อง\n" +
                    $"--------------\n" +
                    $"Stok update\n"+
+                   
                    $"Water: {Water}\n" +
                    $"Coffee: {Coffee}\n" +
                    $"Chocolate Powder: {ChocolatePowder}\n" +
                    $"Milk: {Milk}";
+        }
+
+        public int GetBlackCoffeeStock()
+        {
+            return BlackCoffee;
         }
     }
 }
