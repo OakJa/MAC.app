@@ -8,10 +8,10 @@ namespace MAC.app
         }
 
         private Item item = new Item(0, 0, 0, 0, 1000, 1000, 1000, 1000);
-        private int blackCoffeeStock; // Initialize with a default value
-        private int moccaStock; // Initialize with a default value
-        private int latteStock; // Initialize with a default value
-        private int chocolateStock; // Initialize with a default value
+        private int blackCoffeeStock; 
+        private int moccaStock; 
+        private int latteStock; 
+        private int chocolateStock; 
 
         private void GroupBox1_Enter(object sender, EventArgs e)
         {
@@ -23,7 +23,7 @@ namespace MAC.app
             int amountToBuy = 1;
             bool result = item.BuyMoccaCoffee(amountToBuy);
             MessageBox.Show(result ? $"Purchase successful: {amountToBuy} Cup(s)" : "Out of stock, please try again later");
-            moccaStock = item.GetBlackCoffeeStock();
+            moccaStock = item.GetMoccaStock();
             tbtextBox2.Text = moccaStock.ToString();
             MessageBox.Show(item.GetStockInfo());
         }
@@ -33,7 +33,7 @@ namespace MAC.app
             int amountToBuy = 1;
             bool result = item.BuyLatteCoffee(amountToBuy);
             MessageBox.Show(result ? $"Purchase successful: {amountToBuy} Cup(s)" : "Out of stock, please try again later");
-            latteStock = item.GetBlackCoffeeStock();
+            latteStock = item.GetLatteStock();
             tbtextBox3.Text = latteStock.ToString();
             MessageBox.Show(item.GetStockInfo());
         }
@@ -43,7 +43,7 @@ namespace MAC.app
             int amountToBuy = 1;
             bool result = item.BuyChocolate(amountToBuy);
             MessageBox.Show(result ? $"Purchase successful: {amountToBuy} Cup(s)" : "Out of stock, please try again later");
-            chocolateStock = item.GetBlackCoffeeStock();
+            chocolateStock = item.GetChocolateStock();
             tbtextBox4.Text = chocolateStock.ToString();
             MessageBox.Show(item.GetStockInfo());
         }

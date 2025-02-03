@@ -123,5 +123,21 @@ namespace MAC.app
         {
             return BlackCoffee;
         }
+
+        public int GetMoccaStock()
+        {
+            return Mocca;
+        }
+
+        public int GetLatteStock()
+        {
+            return Latte;
+        }
+
+        public int GetChocolateStock()
+        {
+            return Chocolate;
+        }
+
     }
 }
